@@ -8,6 +8,7 @@ export default class RouterNumeros {
   }
 
   start() {
+    this.router.get("/entrada", this.controladorNumeros.obtenerNumeros);
     this.router.get("/promedio", this.controladorNumeros.obtenerPromedio);
     this.router.get("/minmax", this.controladorNumeros.obtenerCantidadManYMin);
     this.router.get(
